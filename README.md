@@ -1,3 +1,14 @@
+# How to use
+
+```
+$ npx ng serve
+$ npx ng serve login
+```
+
+# Documentation
+
+1. https://dev.to/michaeljota/how-to-split-an-angular-app-into-micro-frontend-apps-1fi9
+
 # AppMicro
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
