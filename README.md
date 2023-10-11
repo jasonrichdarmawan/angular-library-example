@@ -2,6 +2,13 @@
 
 ```
 $ npx ng serve
+```
+
+# How to develop
+
+Let say you want to only develop the Login feature
+
+```
 $ npx ng serve login
 ```
 
