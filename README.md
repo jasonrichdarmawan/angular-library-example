@@ -6,10 +6,18 @@ $ npx ng serve
 
 # How to develop
 
-Let say you want to only develop the Login feature
+Let say you want to only develop the Auth feature
 
 ```
-$ npx ng serve login
+$ npx ng build auth --watch
+$ npx ng serve
+```
+
+**Important**:
+Always run the `npx ng build auth --watch` command before `npx ng serve`. Otherwise, the compiler will return an error when the authentication library is rebuilt.
+
+```
+Cannot find module '@@auth' or its corresponding type declarations.
 ```
 
 # Documentation
