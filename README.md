@@ -4,9 +4,9 @@
 $ npx ng serve
 ```
 
-# How to develop
+# How to develop a service
 
-Let say you want to only develop the Auth feature
+Let say you want to only develop the Auth service
 
 ```
 $ npx ng build auth --watch
@@ -19,6 +19,18 @@ Always run the `npx ng build auth --watch` command before `npx ng serve`. Otherw
 ```
 Cannot find module '@@auth' or its corresponding type declarations.
 ```
+
+# How to develop a feature
+
+Let say you want to only develop the Login feature
+
+```
+$ npx ng build login-lib --watch
+$ npx ng serve
+```
+
+**Important**:
+Always run the `npx ng build login-lib --watch` and not `npx ng build login --watch`. The latter is for `ng serve login`, which is a standalone application.
 
 # Documentation
 
