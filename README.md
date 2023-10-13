@@ -1,3 +1,12 @@
+# How to install
+
+```
+$ npx ng build models
+$ npx ng build auth
+$ npx ng build login-lib
+$ npx ng build user-list-ng-select-lib
+```
+
 # How to use
 
 ```
@@ -35,6 +44,38 @@ Always run the `npx ng build login-lib --watch` and not `npx ng build login --wa
 # Documentation
 
 1. https://dev.to/michaeljota/how-to-split-an-angular-app-into-micro-frontend-apps-1fi9
+
+# Non Priority To Do
+
+`dependencies` instead of `peerDependencies` in `package.json` of a library
+
+in `package.json`
+```
+{
+    "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "../../dist/user-list-ng-select-lib",
+    "lib": {
+      "entryFile": "src/public-api.ts"
+    },
+    "allowedNonPeerDependencies": [
+      "@ng-select/ng-select"
+    ]
+  }
+```
+
+in `ng-package.json`
+```
+    "allowedNonPeerDependencies": [
+      "@ng-select/ng-select"
+    ]
+```
+
+`styles.scss` of a library instead of the `styles.scss` of the `my-first-app` application.
+
+in `styles.scss` of a library.
+```
+@import "~@ng-select/ng-select/themes/material.theme.css";
+```
 
 # AppMicro
 

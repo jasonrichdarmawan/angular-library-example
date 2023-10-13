@@ -18,6 +18,9 @@
       ],
       "@@login": [
         "dist/login-lib"
+      ],
+      "@@user-list-ng-select": [
+        "dist/user-list-ng-select-lib"
       ]
     },
     "noFallthroughCasesInSwitch": true,

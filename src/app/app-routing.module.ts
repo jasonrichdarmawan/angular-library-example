@@ -6,15 +6,24 @@ import { isNotLogged } from '@@auth';
 const routes: Routes = [
   {
     path: '',
+    pathMatch: 'full',
+    redirectTo: 'dashboard',
+  },
+  {
+    path: 'dashboard',
     canMatch: [isLogged],
     loadChildren: () =>
       import('./features/dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   {
-    path: '',
+    path: 'login',
     canMatch: [isNotLogged],
     loadChildren: () => import('@@login').then((m) => m.LoginModule),
   },
+  {
+    path: 'users',
+    loadChildren: () => import("@@user-list-ng-select").then((m) => m.UserListModule),
+  }
 ];
 
 @NgModule({
