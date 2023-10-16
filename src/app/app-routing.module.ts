@@ -21,9 +21,13 @@ const routes: Routes = [
     loadChildren: () => import('@@login').then((m) => m.LoginModule),
   },
   {
-    path: 'users',
+    path: 'user-list',
     loadChildren: () => import("@@user-list-ng-select").then((m) => m.UserListModule),
-  }
+  },
+  {
+    path: 'users',
+    loadChildren: () => import("@@users-ssr").then((m) => m.UsersModule),
+  },
 ];
 
 @NgModule({

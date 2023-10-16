@@ -21,6 +21,9 @@
       ],
       "@@user-list-ng-select": [
         "dist/user-list-ng-select-lib"
+      ],
+      "@@users-ssr": [
+        "dist/users-ssr-lib"
       ]
     },
     "noFallthroughCasesInSwitch": true,
