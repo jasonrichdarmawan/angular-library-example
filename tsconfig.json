@@ -22,6 +22,9 @@
       "@@user-list-ng-select": [
         "dist/user-list-ng-select-lib"
       ],
+      "@@users": [
+        "dist/users-lib"
+      ],
       "@@users-ssr": [
         "dist/users-ssr-lib"
       ]

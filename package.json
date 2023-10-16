@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run users-ssr:serve-ssr",
-    "serve:ssr": "node dist/users-ssr/server/main.js",
-    "build:ssr": "ng build && ng run users-ssr:server",
-    "prerender": "ng run users-ssr:prerender"
+    "dev:ssr": "ng run app-micro:serve-ssr",
+    "serve:ssr": "node dist/app-micro/server/main.js",
+    "build:ssr": "ng build && ng run app-micro:server",
+    "prerender": "ng run app-micro:prerender"
   },
   "private": true,
   "dependencies": {

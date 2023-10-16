@@ -26,12 +26,14 @@ const routes: Routes = [
   },
   {
     path: 'users',
-    loadChildren: () => import("@@users-ssr").then((m) => m.UsersModule),
+    loadChildren: () => import("@@users").then((m) => m.UsersModule),
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

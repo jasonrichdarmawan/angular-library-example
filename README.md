@@ -5,6 +5,7 @@ $ npx ng build models
 $ npx ng build auth
 $ npx ng build login-lib
 $ npx ng build user-list-ng-select-lib
+$ npx ng build users-lib
 $ npx ng build users-ssr-lib
 ```
 
